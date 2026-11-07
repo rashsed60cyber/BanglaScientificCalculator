@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+:root{font-family:'Hind Siliguri',Inter,sans-serif;color:#edf3ff;background:#0b1220}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 15% 0%,#1c3154 0,#0b1220 42%);padding:28px 14px}
+.app{max-width:760px;margin:auto}header{display:flex;align-items:center;gap:14px;margin:0 0 22px}.brand-mark{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#2563eb;font:700 30px Inter;box-shadow:0 8px 25px #2563eb55}
+h1{font-size:25px;margin:0}header p{margin:1px 0 0;color:#9fb0ca;font:13px Inter}
+.calculator,.help{background:#111d30;border:1px solid #263750;border-radius:22px;padding:20px;box-shadow:0 20px 55px #0005}
+.topline{display:flex;justify-content:space-between;align-items:center;color:#9fb0ca;font-size:13px;margin-bottom:12px}.mode{display:flex;align-items:center;gap:8px}
+select{background:#1c2d47;color:#fff;border:1px solid #3b5271;border-radius:8px;padding:7px 10px}
+.display{min-height:112px;background:#08111f;border:1px solid #263750;border-radius:15px;padding:15px 17px;margin-bottom:16px;text-align:right;overflow-wrap:anywhere}
+.expression{font:500 25px Inter,sans-serif;min-height:36px;color:#f8fbff}.result{font-size:15px;color:#8da4c4;margin-top:9px}
+.keys{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}
+button{border:1px solid #2c405d;border-radius:11px;min-height:49px;background:#1b2b43;color:#edf4ff;font:600 16px Inter,'Hind Siliguri',sans-serif;cursor:pointer;transition:.15s}
+button:hover{filter:brightness(1.2);transform:translateY(-1px)}button:active{transform:scale(.97)}
+.function{background:#172944;color:#8fc2ff;font-size:14px}.operator{background:#263d5e;color:#c4dcff;font-size:20px}.danger{background:#512c3b;color:#ffb8c5}.secondary{background:#26354b}
+.equals{grid-column:span 3;background:#2563eb;border-color:#3678fa;color:white;font-family:'Hind Siliguri',sans-serif;font-size:17px}
+.message{min-height:22px;margin:12px 2px 0;color:#ff9eaa;font-size:14px}.message.success{color:#7de0b1}
+.help{margin-top:16px;padding:18px 20px}.help h2{font-size:18px;margin:0 0 8px}.help p{font-size:14px;line-height:1.7;color:#b6c5da;margin:5px 0}.help code{color:#9cc7ff;background:#1b2b43;padding:2px 5px;border-radius:5px}.help .note{color:#7de0b1}
+footer{text-align:center;color:#71839e;font:12px Inter;margin:18px 0}
+@media(max-width:520px){body{padding:18px 9px}.calculator{padding:13px}.keys{gap:6px}button{min-height:46px;border-radius:9px;font-size:14px}.function{font-size:12px}.expression{font-size:21px}h1{font-size:21px}}
